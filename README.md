@@ -16,6 +16,7 @@ This is a Pokedex application built with Html, Css and Javascript. The app consu
 - There are 1126 pokemons available;
 - Project not finished;
 - It will still receive some features in the future, but it can now be used normally;
+- I do not own the images, they were only used for this non-profit project;
 
 # Images
 
