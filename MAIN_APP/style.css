@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@900&display=swap');
+
+:root {
+  font-family: Poppins, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.logo{
+  animation: logoAnimation .8s ease-in;
+}
+
+@keyframes logoAnimation{
+  from{
+    padding-right: 100%;
+  }
+
+  to{
+    padding-right: 0%;
+  }
+}
+
+
+.main {
+  background-image: linear-gradient(120deg, rgb(2, 2, 5), rgb(41, 38, 44));
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 0.5em;
+  /* transition: 1s ease-in; */
+}
+
+
+.main p {
+  color: white;
+  font-size: 2.3em;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  color: chartreuse;
+}
+.div-search {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.div-search input {
+  width: 20em;
+  padding: 1em 0em;
+}
+
+.div-search button {
+  background-color: rgb(189, 41, 15);
+  border: none;
+  color: white;
+  font-size: 1.1em;
+
+  padding: 1em 0.5em;
+  cursor: pointer;
+}
+
+.div-search button:hover {
+  transition: 0.4s;
+  background-color: rgb(228, 42, 9);
+}
+
+.div-search .all{
+  background-color: rgb(13, 107, 76);
+}
+
+.div-search .all:hover{
+  background-color: rgb(25, 152, 110);
+}
+
+.renderCards{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+ul {
+  padding-top: 1em;
+  /* background-color: rgb(88, 19, 109); */
+  /* background-color: black; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1em;
+  padding-bottom: 2em;
+}
+
+li {
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 165px;
+  list-style: none;
+  background-image: linear-gradient(to left, black, rgb(82, 69, 69));
+  outline: 2.5px outset rgb(225, 0, 255);
+  cursor: pointer;
+  transition: ease-in 1s;
+  /* animation: cardAnimation .4s infinite; */
+}
+
+li:hover {
+  transition: ease-in 0.1s;
+  outline: 4px outset rgb(0, 255, 13);
+  /* background-image: linear-gradient(200deg, black, rgb(56, 172, 201)); */
+  animation: none;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(14, 255, 175);
+}
+
+a {
+  background-color: black;
+  color: rgb(255, 131, 15);
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.1px;
+  font-size: 1.1em;
+  bottom: 0;
+}
+
+li:hover a {
+  transition: ease-in .1s;
+  background-color: rgb(44, 39, 39);
+}
+
+.loading-animation {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.loading-animation img{
+  animation: waitingData 1s infinite;
+}
+.loading-animation p{
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.hide{
+  display: none;
+}
+
+@keyframes waitingData{
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+footer {
+  background-color: rgb(43, 33, 43);
+  color: white;
+  text-align: center;
+  padding: 1.5em 0em;
+}
