@@ -6,6 +6,7 @@ This is a Pokedex application built with Html, Css and Javascript. The app consu
 
 - Uses Asynchronous functions;
 - Has a responsive layout;
+- Has click and keyboard events;
 - Allows the user to search all the available pokemons by inserting the pokemon name in the input field;
 - Consumes Rest APIs;
 - The project uses JSON to get the data;
